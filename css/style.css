@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Montserrat-400.woff2'),
+    url('../fonts/Montserrat-400.woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/Montserrat-900.woff2'),
+    url('../fonts/Montserrat-900.woff');
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: #181818;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.voice-control {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-image: url('../img/phone-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center 1450px;
+  background-size: 353px 424px;
+}
+
+@media (min-width: 1100px) {
+  .voice-control {
+    display: grid;
+    grid-template-columns: 670px 290px;
+    grid-template-rows: 5;
+    background-image: url('../img/phone-desktop.png'), url('../img/pattern-background.svg');
+    background-size: 802px 827px, 2002px 1127px;
+    background-position: center right 0, 0 -157px;
+  }
+}
+
+.voice-control__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 34px;
+}
+
+@media (min-width: 1100px) {
+  .voice-control__title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    max-width: 390px;
+    margin: 0;
+    font-size: 56px;
+    line-height: 50px;
+    min-height: 150px;
+  }
+}
+
+.voice-control__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+@media (min-width: 1100px) {
+  .voice-control__text {
+    max-width: 586px;
+    font-size: 22px;
+    line-height: 37px;
+    margin-bottom: 0;
+  }
+}
+
+.animation {
+  position: relative;
+  width: 290px;
+  height: 880px;
+  margin: 0 auto;
+  margin-bottom: 550px;
+}
+
+@media (min-width: 1100px) {
+  .animation {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    height: 800px;
+    margin-bottom: 0;
+    order: 2;
+  }
+}
+
+.animation__portal {
+  position: absolute;
+  width: 290px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.animation__woman {
+  position: absolute;
+  bottom: 0;
+  width: 290px;
+  height: 0;
+  background-image: url('../img/woman.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  z-index: 2;
+}
+
+.voice-control__tagline {
+  margin: 0;
+  margin-top: 40px;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 34px;
+}
+
+@media (min-width: 1100px) {
+  .voice-control__tagline {
+    margin: 0;
+  }
+}
+
+.voice-control__tagline--okey {
+  font-size: 61px;
+  line-height: 55px;
+}
+
+@media (min-width: 1100px) {
+  .voice-control__tagline--okey {
+    margin-left: 80px;
+  }
+}
+
+.voice-control__tagline--yamaguchi {
+  font-weight: 900;
+  font-size: 49px;
+  line-height: 45px;
+}
